@@ -1,18 +1,9 @@
 defmodule CoinFlip do
-  @moduledoc """
-  Documentation for `CoinFlip`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> CoinFlip.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def flip() do
+    if :rand.uniform(2) > 1 do
+      :heads
+    else
+      :tails
+    end
   end
 end
